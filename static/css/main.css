@@ -1,0 +1,632 @@
+:root{
+    --primary-alternative-base: #333333;
+    --primary-default-base: #ffcc19;
+}
+body {
+    font-family: 'Inter', sans-serif;
+}
+.dee-desktop-navbar,
+.dee-desktop-navbar * {
+    box-sizing: border-box;
+}
+
+.bg-primary-default-base{
+    background: var(--primary-default-base);
+}
+
+.color-primary-default-base{
+    color: var(--primary-default-base);
+}
+.color-primary-alternative-base{
+    color: var(--primary-alternative-base);
+}
+
+.bg-primary-alternative-base{
+    background: var(--primary-alternative-base);
+}
+
+.dee-desktop-navbar {
+    background: var(--backgrounds-light-surface-default, #ffffff);
+    padding: var(--spacing-none, 0px) var(--spacing-gigantic, 128px)
+    var(--spacing-none, 0px) var(--spacing-gigantic, 128px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 1280px;
+    height: var(--spacing-huge, 64px);
+    position: sticky;
+    box-shadow: var(
+            --elevationdropshadow-soft-box-shadow,
+            0px 4px 20px 0px rgba(0, 0, 0, 0.05)
+    );
+}
+.frame-1 {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-huge, 64px);
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+.dee-logo-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 2.13px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+.base-logo {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    transform: translate(-48px, 0px);
+    overflow: visible;
+}
+.dee-tabmenu-full {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-none, 0px);
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 480px;
+    position: relative;
+}
+.dee-tabmenu-item {
+    background: var(--backgrounds-light-surface-default, #ffffff);
+    border-style: solid;
+    border-color: #ffcc19;
+    border-width: 0px 0px 5px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+}
+.base-tabmenu {
+    padding: var(--spacing-medium, 12px) var(--spacing-medium, 12px)
+    var(--spacing-default, 16px) var(--spacing-medium, 12px);
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-x-small, 4px);
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+}
+.text-label {
+    color: var(--text-on-light-default, #333333);
+    text-align: center;
+    font: var(--body-small-emp, 700 13px/140% "Inter", sans-serif);
+    position: relative;
+}
+.dee-tabmenu-item2 {
+    background: var(--backgrounds-light-surface-default, #ffffff);
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+}
+.text-label2 {
+    color: var(--text-on-light-default, #333333);
+    text-align: center;
+    font: var(--body-small, 400 13px/140% "Inter", sans-serif);
+    position: relative;
+}
+.header{
+    background-image: url("../../asset/background.png");
+    background-size: cover;
+    background-attachment: scroll;
+    height: 720px;
+}
+.sub-header{
+    background-image: url("../../asset/sub-header.svg");
+    background-size: cover;
+    height: 650px;
+}
+.separator{
+    margin-top: -4.75rem;
+}
+.heading-font{
+    color: #333333;
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 58.80px;
+    word-wrap: break-word
+}
+#countdown {
+}
+.dee-button-desktop {
+    cursor: pointer;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    flex-shrink: 0;
+    position: relative;
+}
+.base-button-desktop {
+    border-radius: var(--corner-radius-round, 1000px);
+    padding: var(--spacing-medium, 12px) var(--spacing-xx-large, 32px)
+    var(--spacing-medium, 12px) var(--spacing-xx-large, 32px);
+    display: flex;
+    gap: var(--spacing-small, 8px);
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: var(
+            --elevationdropshadow-soft-box-shadow,
+            0px 4px 20px 0px rgba(0, 0, 0, 0.05)
+    );
+    overflow: hidden;
+}
+.insert-label {
+    text-align: left;
+    font: var(--body-default-emp, 700 16px/140% "Inter", sans-serif);
+    position: relative;
+}
+.dee-arrow {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.rectangle-7,
+.rectangle-7 * {
+    box-sizing: border-box;
+}
+.rectangle-7 {
+    background: #d9d9d9;
+    width: 1280px;
+    height: 132px;
+    position: relative;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, -1);
+}
+.major-aim{
+    background-color: #F6931D;
+}
+.major-aim-heading {
+    color: var(--text-on-light-default, #333333);
+    text-align: left;
+    font: var(--title-medium-h-2, 700 39px/120% "Inter", sans-serif);
+    position: relative;
+    align-self: stretch;
+}
+.major-aim-sub-heading {
+    color: var(--text-on-light-default, #333333);
+    text-align: left;
+    font: var(--body-default, 400 16px/140% "Inter", sans-serif);
+    position: relative;
+    align-self: stretch;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-large, 20px);
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+}
+.time-efficiency {
+    color: var(--text-on-dark-default, #ffffff);
+    text-align: left;
+    font: var(--title-medium-h-2, 700 39px/120% "Inter", sans-serif);
+    position: relative;
+    align-self: stretch;
+}
+.bg-branding-dune{
+    background: var(--branding-dune, #333333);
+}
+.time-efficiency-subtitle {
+    color: var(--text-on-dark-subdued, #cccccc);
+    text-align: left;
+    font: var(--body-default, 400 16px/140% "Inter", sans-serif);
+    position: relative;
+    align-self: stretch;
+}
+.bg-backgrounds-light-surface-default{
+    background: var(--backgrounds-light-surface-default, #ffffff);
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-large, 20px);
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+.budget-turnover-for-sellers {
+    color: var(--secondary-base, #f6931d);
+    text-align: left;
+    font: var(--title-medium-h-2, 700 39px/120% "Inter", sans-serif);
+    position: relative;
+    align-self: stretch;
+}
+.budget-subtitle {
+    color: var(--text-on-light-subdued, #666666);
+    text-align: left;
+    font: var(--body-default, 400 16px/140% "Inter", sans-serif);
+    position: relative;
+    width: 382px;
+}
+.bg-branding-concrete{
+    background: var(--branding-concrete, #e6e6e6);
+}
+
+.goods-turnover-for-buyers {
+    color: var(--text-on-light-default, #333333);
+    text-align: center;
+    font: var(--title-medium-h-2, 700 39px/120% "Inter", sans-serif);
+    position: relative;
+    align-self: stretch;
+}
+.turnover-subtitle {
+    color: var(--text-on-light-subdued, #666666);
+    text-align: center;
+    font: var(--body-default, 400 16px/140% "Inter", sans-serif);
+    position: relative;
+}
+.user-friendly-bg{
+    background: var(--branding-supernova, #ffcc19);
+}
+.user-friendly {
+    color: var(--text-on-light-default, #333333);
+    text-align: center;
+    font: var(--title-medium-h-2, 700 39px/120% "Inter", sans-serif);
+    position: relative;
+    align-self: stretch;
+}
+.user-friendly-subtitle {
+    color: var(--text-on-light-default, #333333);
+    text-align: left;
+    font: var(--body-default, 400 16px/140% "Inter", sans-serif);
+    position: relative;
+    align-self: stretch;
+}
+.contact-us{
+    background-image: url("../../asset/contact-bg.png");
+    background-size: cover;
+    background-attachment: scroll;
+}
+.let-s-get-in-touch {
+    color: var(--text-on-dark-default, #ffffff);
+    text-align: left;
+    font: var(--title-medium-h-2, 700 39px/120% "Inter", sans-serif);
+    position: relative;
+    align-self: stretch;
+}
+.deellin-contacted {
+    color: var(--text-on-dark-subdued, #cccccc);
+    text-align: left;
+    font: var(--body-default, 400 16px/140% "Inter", sans-serif);
+    position: relative;
+    align-self: stretch;
+}
+.frame-10 {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-small, 8px);
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+.dee-email {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+.info-deellin-gmail-com {
+    color: var(--primary-default-base, #ffcc19);
+    text-align: left;
+    font: var(--body-default-emp, 700 16px/140% "Inter", sans-serif);
+    position: relative;
+    width: 342px;
+}
+
+.form,
+.form * {
+    box-sizing: border-box;
+}
+.form {
+    background: var(--backgrounds-light-surface-selected, #f7f7f7);
+    border-radius: var(--corner-radius-medium, 12px);
+    padding: var(--spacing-xx-large, 32px);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-default, 16px);
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 382px;
+    position: relative;
+}
+.dee-txtfield-single-line {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+.base-textfield-single-line {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-x-small, 4px);
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+.label {
+    padding: 0px 0px 0px var(--spacing-medium, 12px);
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-tiny, 2px);
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 18px;
+    position: relative;
+}
+.field-label {
+    color: var(--text-on-light-subdued, #666666);
+    text-align: left;
+    font: var(--body-small, 400 13px/140% "Inter", sans-serif);
+    position: relative;
+}
+. {
+    color: var(--semantic-error-border, #ff3317);
+    text-align: left;
+    font: var(--body-small, 400 13px/140% "Inter", sans-serif);
+    position: relative;
+}
+.text-container {
+    background: var(--backgrounds-light-surface-default, #ffffff);
+    border-radius: var(--corner-radius-medium, 12px);
+    border-style: solid;
+    border-color: var(--u-is-surfaces-default-border, #e6e6e6);
+    border-width: 1px;
+    padding: var(--spacing-medium, 12px);
+    display: flex;
+    flex-direction: row;
+    gap: 89px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+.text-input {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    height: 21px;
+    position: relative;
+}
+.text-input-here {
+    color: var(--text-on-light-subdued-3, #999999);
+    text-align: left;
+    font: var(--body-default, 400 16px/140% "Inter", sans-serif);
+    opacity: 0.4000000059604645;
+    position: relative;
+}
+.text-input-here2 {
+    color: var(--text-on-light-default, #333333);
+    text-align: left;
+    font: var(--body-default, 400 16px/140% "Inter", sans-serif);
+    position: relative;
+}
+.text-container2 {
+    background: var(--backgrounds-light-surface-default, #ffffff);
+    border-radius: var(--corner-radius-medium, 12px);
+    border-style: solid;
+    border-color: #ffcc19;
+    border-width: 1px;
+    padding: var(--spacing-medium, 12px);
+    display: flex;
+    flex-direction: row;
+    gap: 89px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: var(
+            --activefield-box-shadow,
+            0px 0px 1px 3px rgba(255, 204, 25, 0.2)
+    );
+    overflow: hidden;
+}
+.cursor {
+    border-style: solid;
+    border-color: #333333;
+    border-width: 1px 0 0 0;
+    flex-shrink: 0;
+    width: 21px;
+    height: 0px;
+    position: relative;
+    transform-origin: 0 0;
+    transform: rotate(90deg) scale(1, 1);
+}
+.dee-close {
+    flex-shrink: 0;
+    position: absolute;
+    right: 12px;
+    top: calc(50% - 11.5px);
+    overflow: visible;
+}
+.dee-txtfield-multi-line {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+.base-textfield-multi-line {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+.text-container3 {
+    background: var(--backgrounds-light-surface-default, #ffffff);
+    border-radius: var(--corner-radius-medium, 12px);
+    border-style: solid;
+    border-color: #e6e6e6;
+    border-width: 1px;
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 144px;
+    position: relative;
+    overflow: hidden;
+}
+.text-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+}
+.input-state {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+.text-input2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-start;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+.txt {
+    color: var(--text-on-light-subdued-3, #999999);
+    text-align: left;
+    font: var(--body-default, 400 16px/140% "Inter", sans-serif);
+    opacity: 0.4000000059604645;
+    position: relative;
+    align-self: stretch;
+}
+.dee-resize {
+    flex-shrink: 0;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    overflow: visible;
+}
+.dee-button-desktop-send {
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+.base-button-desktop-send {
+    background: var(--semantic-disabled-base, #cccccc);
+    border-radius: var(--corner-radius-round, 1000px);
+    padding: var(--spacing-medium, 12px) var(--spacing-xx-large, 32px)
+    var(--spacing-medium, 12px) var(--spacing-xx-large, 32px);
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-small, 8px);
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+.dee-arrow {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+.frame-11 {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-tiny, 2px);
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+.2 {
+    color: var(--semantic-error-border, #ff3317);
+    text-align: left;
+    font: var(--body-tiny, 400 10px/140% "Inter", sans-serif);
+    position: relative;
+}
+.required-fields {
+    color: var(--text-on-light-subdued, #666666);
+    text-align: left;
+    font: var(--body-tiny, 400 10px/140% "Inter", sans-serif);
+    position: relative;
+}
+.footer {
+    background: #000000;
+    flex-shrink: 0;
+    height: 43px;
+    position: relative;
+    overflow: hidden;
+}
+.copyright-2023-deellin-all-rights-reserved {
+    color: var(--text-on-dark-subdued-3, #808080);
+    text-align: left;
+    font: var(--label-medium, 600 10px/140% "Inter", sans-serif);
+    position: absolute;
+    left: calc(50% - 112px);
+    top: calc(50% - 6.5px);
+}
+
