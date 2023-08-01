@@ -299,6 +299,14 @@
                 dataType: "json",
                 encode: true,
             }).done(function (data) {
+                console.log(data);
+                turnstile.render('#turnstile', {
+                    sitekey: '0x4AAAAAAAH5Ek76xaHw8fLD',
+                    callback: function(token) {
+                        console.log(`Challenge Success ${token}`);
+                        tkn = token;
+                    },
+                });
                 if (data === "OK"){
                     $("#name").val("");
                     $("#email").val("");
