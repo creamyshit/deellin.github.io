@@ -231,7 +231,7 @@
                     <div id="turnstile"></div>
                     <div class="dee-button-desktop-send">
                         <div class="base-button-desktop-send">
-                            <div class="insert-label" onclick="document.forms[0].submit()">Send</div>
+                            <div class="insert-label" id="button">Send</div>
                             <svg
                                     class="dee-arrow"
                                     width="25"
@@ -283,7 +283,7 @@
     });
 
     $(document).ready(function () {
-        $("form").submit(function (event) {
+        $("#button").click(function (event) {
             var formData = {
                 name: $("#name").val(),
                 email: $("#email").val(),
