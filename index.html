@@ -300,6 +300,10 @@
                 encode: true,
             }).done(function (data) {
                 console.log(data);
+                $("#name").val("");
+                $("#email").val("");
+                $("#industry").val("");
+                $("#message").val("");
             });
 
             event.preventDefault();
