@@ -299,13 +299,41 @@
                 data: formData,
                 dataType: "json",
                 encode: true,
+                success: function (data) {
+                    console.log(data);
+                    turnstile.render('#turnstile', {
+                        sitekey: '0x4AAAAAAAH5Ek76xaHw8fLD',
+                        callback: function(token) {
+                            console.log(`Challenge Success ${token}`);
+                            tkn = token;
+                        },
+                    });
+                    if (data === "OK"){
+                        $("#name").val("");
+                        $("#email").val("");
+                        $("#industry").val("");
+                        $("#message").val("");
+                        alert("Terima kasih telah menghubungi kami !");
+                    }
+
+                }
             }).done(function (data) {
-                console.log("this is data", data)
-                $("#name").val("");
-                $("#email").val("");
-                $("#industry").val("");
-                $("#message").val("");
-                alert("Terima kasih telah menghubungi kami !");
+                console.log(data);
+                turnstile.render('#turnstile', {
+                    sitekey: '0x4AAAAAAAH5Ek76xaHw8fLD',
+                    callback: function(token) {
+                        console.log(`Challenge Success ${token}`);
+                        tkn = token;
+                    },
+                });
+                if (data === "OK"){
+                    $("#name").val("");
+                    $("#email").val("");
+                    $("#industry").val("");
+                    $("#message").val("");
+                    alert("Terima kasih telah menghubungi kami !");
+                }
+
             });
 
             event.preventDefault();
