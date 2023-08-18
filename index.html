@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="static/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/png" href="./asset/base-icon.png" />
+    <link rel="icon" type="image/png" href="./asset/base-icon.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
@@ -19,43 +19,49 @@
 </head>
 <body class="body">
 <div class="flex-column">
-    <div class="dee-desktop-navbar">
-        <img src="./asset/base-logo.svg">
-        <div class="frame-1">
-            <div class="dee-tabmenu-full">
-                <div class="dee-tabmenu-item">
-                    <div class="base-tabmenu">
-                        <div class="text-label">Home</div>
+    <div class="dee-desktop-navbar pt-2 pb-2">
+        <div class="flex-row d-flex">
+            <div class="pb-1">
+                <img src="./asset/base-logo.svg">
+            </div>
+            <div class="frame-1">
+                <div class="dee-tabmenu-full">
+                    <div class="dee-tabmenu-item">
+                        <div class="base-tabmenu">
+                            <div class="text-label">Home</div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="dee-tabmenu-item2">
-                    <div class="base-tabmenu">
-                        <div class="text-label2">About</div>
+                    <div class="dee-tabmenu-item">
+                        <div class="base-tabmenu">
+                            <div class="text-label2">About</div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="dee-tabmenu-item2">
-                    <div class="base-tabmenu">
-                        <div class="text-label2">Solutions</div>
+                    <div class="dee-tabmenu-item">
+                        <div class="base-tabmenu">
+                            <div class="text-label2">Solutions</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="dee-button-desktop bg-primary-default-base">
-            <div class="base-button-desktop">
-                <div class="insert-label color-primary-alternative-base">Contact Deellin</div>
-                <img class="color-primary-alternative-base" src="./asset/dee-arrow-alternative.svg">
+        <div>
+            <div class="dee-button-desktop bg-primary-default-base pb-1">
+                <div class="base-button-desktop">
+                    <div class="insert-label color-primary-alternative-base">Contact Deellin</div>
+                    <img class="color-primary-alternative-base" src="./asset/dee-arrow-alternative.svg">
+                </div>
             </div>
         </div>
     </div>
     <div class="w-100 header d-flex flex-column justify-content-center align-items-center">
-        <div class="col-6">
+        <div class="col-md-6 col-sm-10">
             <div class="align-items-center">
                 <h1 class="heading-font">
                     Solutions for Smarter Business One Click at a Time!
                 </h1>
-                <p id="countdown" class="mt-4">
+                <p id="countdown" class="mt-2">
                 </p>
                 <div class="dee-button-desktop">
                     <div class="base-button-desktop bg-primary-alternative-base">
@@ -69,10 +75,9 @@
     <div class="separator">
         <img class="w-100" src="./asset/separator-sub-header.svg">
     </div>
-    <div class="w-100 sub-header">
-    </div>
+    <img class="w-100" src="./asset/sub-header.svg">
     <div class="w-100 major-aim d-flex flex-column justify-content-center align-items-center">
-        <div class="col-5">
+        <div class="col-md-6 col-sm-11">
             <h2 class="major-aim-heading">
                 Our major aim is to help businesses transfer their operations to the digital
                 realm.
@@ -87,16 +92,15 @@
             </div>
         </div>
     </div>
-    <div style="margin-top: -1rem">
+    <div>
         <img class="w-100" src="./asset/separator-efficiency.svg">
     </div>
-    <div style="margin-top: -3rem; padding-top: 5rem"
-         class="w-100 bg-branding-dune gap-5 d-flex flex-row justify-content-center align-items-center">
-        <div class="col-6">
+    <div class="col-12 separator-branding bg-branding-dune gap-5 pt-5 pb-5 d-flex flex-md-row flex-sm-column justify-content-center align-items-center">
+        <div class="col-md-6 col-sm-12">
             <img class="w-100" src="./asset/artwork-2.svg">
         </div>
-        <div class="col-6">
-            <div class="w-75">
+        <div class="col-md-6 col-sm-12 d-flex flex-column align-items-center">
+            <div class="col-md-10 col-sm-10">
                 <div class="text">
                     <div class="time-efficiency">Time efficiency</div>
                     <div
@@ -116,13 +120,11 @@
             </div>
         </div>
     </div>
-    <div id="budget">
-        <div>
-            <img class="w-100" src="./asset/artwork-budget.svg">
-        </div>
-        <div class="bg-backgrounds-light-surface-default w-100 flex-row d-flex p-5">
-            <div class="col-6 text align-items-end">
-                <div class="d-flex flex-column col-6">
+    <div id="budget" class="pb-5">
+        <img class="w-100" src="./asset/artwork-budget.svg">
+        <div class="bg-backgrounds-light-surface-default flex-row d-flex">
+            <div class="col-md-6 col-sm-12 text align-items-md-end align-items-sm-center">
+                <div class="d-flex flex-column col-md-6 col-sm-11 mt-sm-3">
                     <div class="budget-turnover-for-sellers">Budget Turnover for Sellers</div>
                     <div class="budget-subtitle mt-4">
                         This function provides vendors on their platform a significant advantage and
@@ -136,14 +138,13 @@
     <div>
         <img class="w-100" src="./asset/separator-goods.svg">
     </div>
-    <div id="goods" style="padding-top: 6rem; margin-top: -78px;padding-bottom: 6rem"
-         class="w-100 bg-branding-concrete">
+    <div id="goods" class="w-100 goods-padding pt-5 pb-5 bg-branding-concrete">
         <div class="w-100 d-flex flex-column justify-content-center align-items-center">
-            <div class="col-6 d-flex flex-column align-items-center">
-                <img class="w-50" src="./asset/artwork-goods.svg">
+            <div class="col-md-6 col-sm-12 d-flex flex-column align-items-center">
+                <img class="w-75 mw-100 img-fluid" src="./asset/artwork-goods.svg">
                 <div class="mt-5 d-flex flex-column align-items-center justify-content-center">
                     <div class="goods-turnover-for-buyers">Goods Turnover for Buyers</div>
-                    <div class="turnover-subtitle mt-4 col-7 align-items-center align-content-center">
+                    <div class="turnover-subtitle mt-4 col-md-7 col-sm-1` align-items-center align-content-center">
                         provides buyers with an array of benefits and makes it easy for them to
                         manage their goods while trusting DEELLIN to manage them well.
                     </div>
@@ -169,10 +170,10 @@
             </div>
         </div>
     </div>
-    <div id="contact-us" style="margin-top: -170px; position: relative; z-index: 3">
-        <div class="p-5 contact-us d-flex gap-5 flex-row align-items-center">
-            <div class="col-6 d-flex flex-column align-items-end">
-                <div class="col-6">
+    <div id="contact-us">
+        <div class="p-5 col-md-12 col-sm-12 contact-us-separator contact-us d-flex gap-5 flex-md-row flex-sm-column align-items-center">
+            <div class="col-md-6 col-sm-12 d-flex flex-column align-items-center">
+                <div class="col-md-6 col-sm-12">
                     <div class="let-s-get-in-touch">Let’s Get in Touch</div>
                     <div class="mt-3 deellin-contacted">
                         DEELLIN can soon be accessed from any mobile device or web browser. Contact
@@ -184,77 +185,78 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12 d-flex flex-column align-items-sm-center">
                 <div class="form">
                     <form>
-                    <div class="dee-txtfield-single-line">
-                        <div class="base-textfield-single-line">
-                            <div class="label">
-                                <div class="field-label">Name</div>
-                                <div class="">*</div>
+                        <div class="dee-txtfield-single-line">
+                            <div class="base-textfield-single-line">
+                                <div class="label">
+                                    <div class="field-label">Name</div>
+                                    <div class="">*</div>
+                                </div>
+                                <input class="text-container" placeholder="Your Name" id="name"/>
                             </div>
-                            <input class="text-container" placeholder="Your Name" id="name"/>
                         </div>
-                    </div>
-                    <div class="dee-txtfield-single-line">
-                        <div class="base-textfield-single-line">
-                            <div class="label">
-                                <div class="field-label">Company Email</div>
-                                <div class="">*</div>
+                        <div class="dee-txtfield-single-line">
+                            <div class="base-textfield-single-line">
+                                <div class="label">
+                                    <div class="field-label">Company Email</div>
+                                    <div class="">*</div>
+                                </div>
+                                <input class="text-container" placeholder="yourname@company.com" id="email"/>
                             </div>
-                            <input class="text-container" placeholder="yourname@company.com" id="email"/>
                         </div>
-                    </div>
 
-                    <div class="dee-txtfield-single-line">
-                        <div class="base-textfield-single-line">
-                            <div class="label">
-                                <div class="field-label">Industry</div>
+                        <div class="dee-txtfield-single-line">
+                            <div class="base-textfield-single-line">
+                                <div class="label">
+                                    <div class="field-label">Industry</div>
 
-                                <div class="">*</div>
+                                    <div class="">*</div>
+                                </div>
+
+                                <input class="text-container2" placeholder="Mining" id="industry"/>
                             </div>
-
-                            <input class="text-container2" placeholder="Mining" id="industry"/>
                         </div>
-                    </div>
 
-                    <div class="dee-txtfield-multi-line">
-                        <div class="base-textfield-multi-line">
-                            <div class="label">
-                                <div class="field-label">Message</div>
+                        <div class="dee-txtfield-multi-line">
+                            <div class="base-textfield-multi-line">
+                                <div class="label">
+                                    <div class="field-label">Message</div>
 
-                                <div class="">*</div>
+                                    <div class="">*</div>
+                                </div>
+
+                                <input type="text" class="text-container3"
+                                       placeholder="Please tell us how we can help you" id="message"/>
                             </div>
-
-                            <input type="text" class="text-container3" placeholder="Please tell us how we can help you" id="message"/>
                         </div>
-                    </div>
-                    <div id="turnstile"></div>
-                    <button id="button" class="dee-button-desktop-send">
-                        <div class="base-button-desktop-send">
-                            <div class="insert-label" id="button">Send</div>
-                            <svg
-                                    class="dee-arrow"
-                                    width="25"
-                                    height="25"
-                                    viewBox="0 0 25 25"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M14.2174 6.08698C14.5906 5.67986 15.2232 5.65235 15.6303 6.02555L22.1757 12.0255C22.3824 12.215 22.5 12.4824 22.5 12.7627C22.5 13.043 22.3824 13.3104 22.1757 13.4999L15.6303 19.4999C15.2232 19.873 14.5906 19.8455 14.2174 19.4384C13.8442 19.0313 13.8717 18.3987 14.2788 18.0255L18.9292 13.7627H3.4682C2.91591 13.7627 2.4682 13.315 2.4682 12.7627C2.4682 12.2104 2.91591 11.7627 3.4682 11.7627H18.9292L14.2788 7.49986C13.8717 7.12666 13.8442 6.4941 14.2174 6.08698Z"
-                                        fill="#B3B3B3"
-                                />
-                            </svg>
-                        </div>
-                    </button>
+                        <div id="turnstile"></div>
+                        <button id="button" class="dee-button-desktop-send">
+                            <div class="base-button-desktop-send">
+                                <div class="insert-label" id="button">Send</div>
+                                <svg
+                                        class="dee-arrow"
+                                        width="25"
+                                        height="25"
+                                        viewBox="0 0 25 25"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M14.2174 6.08698C14.5906 5.67986 15.2232 5.65235 15.6303 6.02555L22.1757 12.0255C22.3824 12.215 22.5 12.4824 22.5 12.7627C22.5 13.043 22.3824 13.3104 22.1757 13.4999L15.6303 19.4999C15.2232 19.873 14.5906 19.8455 14.2174 19.4384C13.8442 19.0313 13.8717 18.3987 14.2788 18.0255L18.9292 13.7627H3.4682C2.91591 13.7627 2.4682 13.315 2.4682 12.7627C2.4682 12.2104 2.91591 11.7627 3.4682 11.7627H18.9292L14.2788 7.49986C13.8717 7.12666 13.8442 6.4941 14.2174 6.08698Z"
+                                            fill="#B3B3B3"
+                                    />
+                                </svg>
+                            </div>
+                        </button>
 
-                    <div class="frame-11">
-                        <div class="2">*)</div>
-                        <div class="required-fields">required fields</div>
-                    </div>
+                        <div class="frame-11">
+                            <div class="2">*)</div>
+                            <div class="required-fields">required fields</div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -276,7 +278,7 @@
     turnstile.ready(function () {
         turnstile.render('#turnstile', {
             sitekey: '0x4AAAAAAAH5Ek76xaHw8fLD',
-            callback: function(token) {
+            callback: function (token) {
                 console.log(`Challenge Success ${token}`);
                 tkn = token;
             },
@@ -303,12 +305,12 @@
                     console.log(data);
                     turnstile.render('#turnstile', {
                         sitekey: '0x4AAAAAAAH5Ek76xaHw8fLD',
-                        callback: function(token) {
+                        callback: function (token) {
                             console.log(`Challenge Success ${token}`);
                             tkn = token;
                         },
                     });
-                    if (data === "OK"){
+                    if (data === "OK") {
                         $("#name").val("");
                         $("#email").val("");
                         $("#industry").val("");
@@ -321,12 +323,12 @@
                 console.log(data);
                 turnstile.render('#turnstile', {
                     sitekey: '0x4AAAAAAAH5Ek76xaHw8fLD',
-                    callback: function(token) {
+                    callback: function (token) {
                         console.log(`Challenge Success ${token}`);
                         tkn = token;
                     },
                 });
-                if (data === "OK"){
+                if (data === "OK") {
                     $("#name").val("");
                     $("#email").val("");
                     $("#industry").val("");
