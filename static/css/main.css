@@ -690,7 +690,10 @@ body {
     z-index: 3;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
+    form{
+        max-width: 90%;
+    }
     .heading-font {
         font-size: 39px;
     }
@@ -719,14 +722,14 @@ body {
     }
 
     .separator-branding {
-        margin-top: -40px;
+        margin-top: -1rem;
     }
 
     .goods-padding {
-        margin-top: -28px;
+        margin-top: -1.25rem;
     }
     .separator{
-        margin-top: -29px;
+        margin-top: -1.25rem;
     }
 }
 
