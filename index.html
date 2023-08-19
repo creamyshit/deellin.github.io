@@ -171,8 +171,8 @@
         </div>
     </div>
     <div id="contact-us">
-        <div class="p-5 col-12 contact-us-separator contact-us d-flex gap-5 flex-column flex-md-row align-items-center">
-            <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+        <div class="pt-5 p-md-5 col-12 contact-us-separator contact-us d-flex gap-5 flex-column flex-md-row align-items-center">
+            <div class="col-11 col-md-6 d-flex flex-column align-items-center">
                 <div class="col-12 col-md-6">
                     <div class="let-s-get-in-touch">Let’s Get in Touch</div>
                     <div class="mt-3 deellin-contacted">
@@ -185,7 +185,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 d-flex flex-column align-items-sm-center">
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center">
                 <div class="form">
                     <form>
                         <div class="dee-txtfield-single-line">
@@ -194,7 +194,7 @@
                                     <div class="field-label">Name</div>
                                     <div class="">*</div>
                                 </div>
-                                <input class="text-container" placeholder="Your Name" id="name"/>
+                                <input class="text-container" required placeholder="Your Name" id="name"/>
                             </div>
                         </div>
                         <div class="dee-txtfield-single-line">
@@ -203,7 +203,7 @@
                                     <div class="field-label">Company Email</div>
                                     <div class="">*</div>
                                 </div>
-                                <input class="text-container" placeholder="yourname@company.com" id="email"/>
+                                <input class="text-container" required placeholder="yourname@company.com" id="email"/>
                             </div>
                         </div>
 
@@ -214,8 +214,7 @@
 
                                     <div class="">*</div>
                                 </div>
-
-                                <input class="text-container2" placeholder="Mining" id="industry"/>
+                                <input class="text-container2" required placeholder="Mining" id="industry"/>
                             </div>
                         </div>
 
@@ -226,13 +225,12 @@
 
                                     <div class="">*</div>
                                 </div>
-
-                                <input type="text" class="text-container3"
+                                <input type="text" class="text-container3" required
                                        placeholder="Please tell us how we can help you" id="message"/>
                             </div>
                         </div>
                         <div id="turnstile"></div>
-                        <button id="button" class="dee-button-desktop-send">
+                        <button id="button" aria-disabled="fo" class="dee-button-desktop-send">
                             <div class="base-button-desktop-send">
                                 <div class="insert-label" id="button">Send</div>
                                 <svg
