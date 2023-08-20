@@ -284,10 +284,7 @@
     });
 
     // Attach a submit handler to the form
-    $( "#button" ).on( "submit", function( event ) {
-
-        // Stop form from submitting normally
-        event.preventDefault();
+    $( "#button" ).on( "click", function( event ) {
 
         // Get some values from elements on the page:
         var formData = {
@@ -303,15 +300,18 @@
 
         // Put the results in a div
         posting.done(function( data ) {
-            console.log(data);
+            var content = $( data ).find( "#content" );
+            $( "#result" ).empty().append( content );
         } );
+        // Stop form from submitting normally
+        event.preventDefault();
     } );
 </script>
 <script>
 
 
     $(document).ready(function () {
-        $("#jjs").click(function (event) {
+        $("#button").click(function (event) {
 
 
             $.ajax({
