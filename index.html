@@ -283,15 +283,36 @@
         });
     });
 
+    // Attach a submit handler to the form
+    $( "#button" ).on( "submit", function( event ) {
+
+        // Stop form from submitting normally
+        event.preventDefault();
+
+        // Get some values from elements on the page:
+        var formData = {
+            name: $("#name").val(),
+            email: $("#email").val(),
+            industry: $("#industry").val(),
+            message: $("#message").val(),
+            token: tkn,
+        };
+
+        // Send the data using post
+        var posting = $.post( "https://api.deellin.com/mail", { formData } );
+
+        // Put the results in a div
+        posting.done(function( data ) {
+            console.log(data);
+        } );
+    } );
+</script>
+<script>
+
+
     $(document).ready(function () {
-        $("#button").click(function (event) {
-            var formData = {
-                name: $("#name").val(),
-                email: $("#email").val(),
-                industry: $("#industry").val(),
-                message: $("#message").val(),
-                token: tkn,
-            };
+        $("#jjs").click(function (event) {
+
 
             $.ajax({
                 type: "POST",
