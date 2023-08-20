@@ -286,22 +286,19 @@
     // Attach a submit handler to the form
     $( "#button" ).on( "click", function( event ) {
 
-        // Get some values from elements on the page:
-        var formData = {
-            name: $("#name").val(),
-            email: $("#email").val(),
-            industry: $("#industry").val(),
-            message: $("#message").val(),
-            token: tkn,
-        };
-
         // Send the data using post
-        var posting = $.post( "https://api.deellin.com/mail", { formData } );
+        var posting = $.post( "https://api.deellin.com/mail", { name: $("#name").val(),email:$("#email").val(), industry: $("#industry").val(),message:$("#message").val(),token: tkn} );
 
         // Put the results in a div
         posting.done(function( data ) {
-            var content = $( data ).find( "#content" );
-            $( "#result" ).empty().append( content );
+            console.log(data);
+            if (data == "OK") {
+                $("#name").val("");
+                $("#email").val("");
+                $("#industry").val("");
+                $("#message").val("");
+                alert("Terima kasih telah menghubungi kami !");
+            }
         } );
         // Stop form from submitting normally
         event.preventDefault();
