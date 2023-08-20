@@ -65,7 +65,7 @@
                 </p>
                 <div class="dee-button-desktop">
                     <div class="base-button-desktop bg-primary-alternative-base">
-                        <div class="insert-label color-primary-default-base">Contact Deellin</div>
+                        <div class="insert-label color-primary-default-base" href="#contact-deellin">Contact Deellin</div>
                         <img src="./asset/dee-arrow.svg">
                     </div>
                 </div>
@@ -185,7 +185,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center" id="contact-deellin">
                 <div class="form">
                     <form>
                         <div class="dee-txtfield-single-line">
@@ -297,46 +297,7 @@
                 $("#email").val("");
                 $("#industry").val("");
                 $("#message").val("");
-                alert("Terima kasih telah menghubungi kami !");
-            }
-        } );
-        // Stop form from submitting normally
-        event.preventDefault();
-    } );
-</script>
-<script>
 
-
-    $(document).ready(function () {
-        $("#button").click(function (event) {
-
-
-            $.ajax({
-                type: "POST",
-                url: "https://api.deellin.com/mail",
-                data: formData,
-                dataType: "json",
-                encode: true,
-                success: function (data) {
-                    console.log(data);
-                    turnstile.render('#turnstile', {
-                        sitekey: '0x4AAAAAAAH5Ek76xaHw8fLD',
-                        callback: function (token) {
-                            console.log(`Challenge Success ${token}`);
-                            tkn = token;
-                        },
-                    });
-                    if (data === "OK") {
-                        $("#name").val("");
-                        $("#email").val("");
-                        $("#industry").val("");
-                        $("#message").val("");
-                        alert("Terima kasih telah menghubungi kami !");
-                    }
-
-                }
-            }).done(function (data) {
-                console.log(data);
                 turnstile.render('#turnstile', {
                     sitekey: '0x4AAAAAAAH5Ek76xaHw8fLD',
                     callback: function (token) {
@@ -344,19 +305,13 @@
                         tkn = token;
                     },
                 });
-                if (data === "OK") {
-                    $("#name").val("");
-                    $("#email").val("");
-                    $("#industry").val("");
-                    $("#message").val("");
-                    alert("Terima kasih telah menghubungi kami !");
-                }
 
-            });
-
-            event.preventDefault();
-        });
-    });
+                alert("Terima kasih telah menghubungi kami !");
+            }
+        } );
+        // Stop form from submitting normally
+        event.preventDefault();
+    } );
 </script>
 </body>
 </html>
